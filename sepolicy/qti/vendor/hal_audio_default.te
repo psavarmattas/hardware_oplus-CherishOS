@@ -1,3 +1,8 @@
 allow hal_audio_default ultrasound_device:chr_file rw_file_perms;
 
 hal_client_domain(hal_audio_default, vendor_hal_oplusPerf)
+
+hal_client_domain(hal_audio_default, vendor_hal_dms)
+
+allow hal_audio_default vendor_hal_dms_default:binder { transfer call };
+allow hal_audio_default vendor_hal_dms_hwservice:hwservice_manager { find };
