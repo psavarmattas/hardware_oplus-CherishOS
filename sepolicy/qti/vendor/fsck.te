@@ -1,2 +1,4 @@
 allow fsck self:capability { sys_admin kill };
+allow fsck sysfs:file getattr;
+
 dontaudit fsck self:capability { dac_override dac_read_search };
