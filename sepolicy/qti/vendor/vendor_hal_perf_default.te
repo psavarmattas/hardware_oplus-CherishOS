@@ -1,1 +1,3 @@
+allow vendor_hal_perf_default self:capability sys_admin;
+
 r_dir_file(vendor_hal_perf_default, vendor_sysfs_usb_supply)

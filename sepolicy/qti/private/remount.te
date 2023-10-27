@@ -1,0 +1,1 @@
+allow remount self:capability sys_admin;
