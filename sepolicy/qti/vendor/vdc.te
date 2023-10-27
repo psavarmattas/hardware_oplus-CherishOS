@@ -1,1 +1,1 @@
-allow vdc vdc:capability kill;
+allow vdc vdc:capability { sys_admin kill };
